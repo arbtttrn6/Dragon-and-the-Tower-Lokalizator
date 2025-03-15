@@ -14,3 +14,5 @@ os, tkinter, re
 
 ================  
 python3 ./dath-lokalizator.py  
+
+![](https://i.imgur.com/zi03kqG.png)
