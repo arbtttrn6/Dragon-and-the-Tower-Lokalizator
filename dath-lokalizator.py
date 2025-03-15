@@ -3,9 +3,9 @@ import tkinter as tk
 from tkinter import ttk, scrolledtext, messagebox, filedialog
 import re
 
-versio = "(0.0.1 | 15/III-25)"
+versio = "(0.0.2 | 15/III-25)"
 
-# Dragon-and-the-Tower-Lokalizator (arbtttrn6) (0.0.1 | 15/III-25)
+# Dragon-and-the-Tower-Lokalizator (arbtttrn6) (0.0.2 | 15/III-25)
 # [RU] Локализатор для INSTEAD игры "Дракон и Башня" ("Dragon and the Tower") на Python  
 # [EO] Tradukilo por INSTEADa ludo "Дракон и Башня" ("Drako kaj Turo") en Python  
 # [ISV] Lokalizator za INSTEAD igru "Дракон и Башня" ("Zmij i Věža") na Python  
@@ -112,6 +112,7 @@ class cLokalizator:
             yscrollcommand=yscroll.set,
             width=40,
             font=('TkFixedFont', 10))
+        
             
         xscroll.config(command=self.listbox.xview)
         yscroll.config(command=self.listbox.yview)
@@ -263,13 +264,13 @@ class cLokalizator:
             self.listbox.see(self.current_index)
 
     def prev_entry(self):
-        self.save_current_eo()
+        #self.save_current_eo()
         if self.current_index > 0:
             self.current_index -= 1
             self.display_entry()
 
     def next_entry(self):
-        self.save_current_eo()
+        #self.save_current_eo()
         if self.current_index < len(self.all_keys) - 1:
             self.current_index += 1
             self.display_entry()
