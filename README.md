@@ -6,7 +6,7 @@
 
 ================  
 Ot: arbtttrn6  
-Versija: (0.0.1 | 15/III-25)  
+Versija: (0.0.2 | 15/III-25)  
 
 ================  
 os, tkinter, re  
